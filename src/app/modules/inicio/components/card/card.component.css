@@ -1,0 +1,89 @@
+/* Estilos Generales */
+.container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 15px; /* Espacio entre elementos */
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contenido {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    transition: transform 0.2s ease; /* Animación en hover */
+    display: inline-block;
+}
+.contenido:hover {
+    transform: translateY(-5px); /* Efecto de levitación */
+}
+p {
+    padding: 5px;
+    font-size: 1rem;
+}
+/* Media Queries para Responsividad */
+@media (max-width: 700px) {
+    .contenido {
+        width: 100%; /* Anchura completa en pantallas pequeñas */
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 700px) {
+    .contenido {
+        width: 350px; /* Mantiene el ancho fijo en pantallas más grandes */
+    }
+}
+* Botón de Like */
+.like-button {
+  background-color: #FFB7A6; /* Color de fondo coral claro para el botón de "Me gusta" */
+  color: white; /* Color de texto blanco */
+  border: none; /* Sin borde visible */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  font-size: 1em; /* Tamaño de fuente para el botón */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  cursor: pointer; /* Cursor de mano para indicar que es clickeable */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  margin: 5px; /* Espaciado adicional entre los botones */
+}
+
+.like-button:hover {
+  background-color: #FF9788; /* Color de fondo coral más oscuro al pasar el cursor */
+}
+
+/* Botones destacados */
+button, .btn {
+  background-color: #A4D5DF; /* Color de fondo azul turquesa claro para los botones */
+  color: white; /* Color de texto blanco */
+  border: none; /* Sin borde visible */
+  padding: 12px 25px; /* Más espaciado en el botón para hacerlo más grande */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor para los botones */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  margin: 5px; /* Espaciado adicional entre los botones */
+}
+
+button:hover, .btn:hover {
+  background-color: #8FC3CC; /* Color de fondo azul turquesa más oscuro al pasar el cursor */
+}
+
+/* Texto de enlaces */
+a {
+  color: #A4D5DF; /* Azul turquesa claro para los enlaces */
+  text-decoration: none; /* Elimina el subrayado predeterminado en los enlaces */
+}
+
+a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
